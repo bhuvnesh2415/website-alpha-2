@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login to your account</title>
+        <meta charset="UTF-8" lang="en" >
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <script src="login.js">
+    </script>
+    <body>
+        <div class="mainDiv">
+            <div class="leftPane">
+                <div class="formContainer">
+                    <div class="logo">
+                            <img alt="alphalyteLogo" src="./Icons/loader.svg" style="width: 23.33px; height: 23.33px; border-radius: 50%; padding-top: 3px;">
+                            <p id="logoText">Alphalyte</p>
+                    </div>
+                    <button class="backButton" onclick="history.back()">
+                            <img src="./Icons/backButton.svg" style="width: 23.33px; height: 23.33px; border-radius: 50%; ">
+                    </button>
+                    <div class="loginText">
+                        <p id="loginText1">Login to your account!</p>
+                        <p id="loginText2">Don't have an account? <a href="signup.html" style="color:blue; text-decoration: none; font-weight: bold;">Register Now</a></p>
+                    </div>
+                    <div class="userLoginError errorMessage" style="visibility: hidden;">
+                        Mobile number or password is incorrect. Please try again.
+                    </div>
+                    <div class="loginForm">
+                        <div class="inputMobile">
+                            <input id="inputMobile" type="text" placeholder="Mobile Number" autofocus maxlength="10" onkeyup="loginColor()">
+                        </div>
+                        <div class="mobileError errorMessage" style="visibility: hidden;">
+                            Mobile Number cannot be empty. Please try again.
+                            <div class="mobileLengthError errorMessage" style="visibility: hidden;">
+                                Mobile Number is not valid. Please try again.
+                            </div>
+                        </div>
+                        <div class="inputPassword">
+                            <input id="inputPassword" type="password" placeholder="Password" required maxlength="25" onkeyup="loginColor()">
+                            <button id="showPassword"><img src="./Icons/view_hide_icon_124813 1.svg" onclick="showPassword()"></button>
+                            <button id="hidePassword" style="display: none;"><img src="./Icons/eye.svg" onclick="showPassword()"></button>
+                        </div>
+                        <div class="passwordError errorMessage" style="visibility: hidden;">
+                            Password cannot be empty. Please try again.
+                        </div>
+                        <div class="extraInfo">
+                            <div class="rememberMe" style="display: flex; align-items: center;">
+                                <input id="checkbox" type="checkbox" value="rememberMe" >
+                                <p id="rememberMe">Remember Me</p>
+                            </div>
+                            <p id="forgotPass"><a  href="forgotPassword.html" style="text-decoration: none;">Forgot password?</a></p>
+                        </div>
+                        <div class="loginButtonMain">
+                            <button class="loginButton" type="submit" onclick="loginError()">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightPane">
+                <div class="image">
+                    <img src="./Icons/Woman.svg">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

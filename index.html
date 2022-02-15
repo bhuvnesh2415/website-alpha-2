@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8" lang="en" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+        <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+        
+    </head>
+    <body x-data="{ mobileSearch: false, mobileNav: false }"
+    x-bind:class="mobileNav ? 'stop' : ''">
+        <div id="header">
+        </div>
+           <div class="middleContent1"> 
+                <div class="leftPortion">
+                    <div class="leftText" >
+                        <p id="lefttext1">Come,
+                        <p id="lefttext2">Learn With Us!</p>
+                        <p id="lefttext3">Explore courses and study materials that you haven’t experienced before. Sign up and let’s get started. </p>
+                        <div class="getStarted">
+                            <button type="submit" id="getStartedButton">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rightPortion">
+                    <div class="rightImage">
+                        <img src="./Icons/Boy.svg" >
+                    </div>
+                </div>
+            </div>
+            <div class="middleContent2">
+                <div class="illustration">
+                    <img src="./Icons/oneOnOneClass.svg" alt="One-On-One Classes" loading="lazy">
+                    <p id="upperText">One-On-One Classes</p>
+                    <p id="lowerText">Personalized classes for our students for better learning experience.</p>
+                </div>
+                <div class="illustration">
+                    <img src="./Icons/offlineClass.svg" alt="Offline Classes" loading="lazy">
+                    <p id="upperText">Offline Classes</p>
+                    <p id="lowerText">We provide offline classes in your city.</p>
+                </div>
+                <div class="illustration">
+                    <img src="./Icons/counselling.svg" alt="Get Free Counselling" loading="lazy">
+                    <p id="upperText">Get Free Counselling</p>
+                    <p id="lowerText">Free career counselling by the experts. So hurry up and get registered.</p>
+                </div>
+                <div class="illustration">
+                    <img src="./Icons/liveClass.svg" alt="Live Classes" loading="lazy" >
+                    <p id="upperText">Live Classes</p>
+                    <p id="lowerText">Daily live classes with doubt session for you.</p>
+                </div>
+            </div>
+                <div class="middleContent3">
+                    <div class="targetText">
+                      <p id="targetText1">Choose Your Target</p>
+                      <p id="targetText2">
+                        Let us know where do you need our help! We can help you anytime
+                        anywhere.
+                      </p>
+                    </div>
+                    <div class="component-4">
+                      <div class="slider">
+                        <div class="slider-inner mobiledragslider-inner my-slider">
+                          <a class="boxs" style="text-decoration: none">
+                            <div class="box box21">
+                              <div class="box-svg">
+                                <img src="./Icons/arrow-in-the-target.svg" class="imagebox-svg" />
+                              </div>
+                              <div class="box-label">
+                                <h3>CBSE</h3>
+                              </div>
+                            </div>
+                          </a>
+                          <a class="boxs" style="text-decoration: none">
+                            <div class="box">
+                              <div class="box-svg">
+                                <img src="./Icons/arrow-in-the-target.svg" class="imagebox-svg" />
+                              </div>
+                              <div class="box-label">
+                                <h3>IIT/JEE</h3>
+                              </div>
+                            </div>
+                          </a>
+              
+                          <a class="boxs" style="text-decoration: none">
+                            <div class="box">
+                              <div class="box-svg">
+                                <img src="./Icons/arrow-in-the-target.svg" class="imagebox-svg" />
+                              </div>
+                              <div class="box-label">
+                                <h3>NEET</h3>
+                              </div>
+                            </div>
+                          </a>
+              
+                          <a class="boxs" style="text-decoration: none">
+                            <div class="box">
+                              <div class="box-svg">
+                                <img src="./Icons/arrow-in-the-target.svg" class="imagebox-svg" />
+                              </div>
+                              <div class="box-label">
+                                <h3>IT Courses</h3>
+                              </div>
+                            </div>
+                          </a>
+              
+                          <a class="boxs" style="text-decoration: none">
+                            <div class="box">
+                              <div class="box-svg">
+                                <img src="./Icons/arrow-in-the-target.svg" class="imagebox-svg" />
+                              </div>
+                              <div class="box-label">
+                                <h3>NCERT</h3>
+                              </div>
+                            </div>
+                          </a>
+              
+                          <a class="boxs" style="text-decoration: none">
+                            <div class="box">
+                              <div class="box-svg">
+                                <img src="./Icons/arrow-in-the-target.svg" class="imagebox-svg" />
+                              </div>
+                              <div class="box-label">
+                                <h3>Test Series</h3>
+                              </div>
+                            </div>
+                          </a>
+              
+                          <a class="boxs" style="text-decoration: none">
+                            <div class="box">
+                              <div class="box-svg">
+                                <img src="./Icons/arrow-in-the-target.svg" class="imagebox-svg" />
+                              </div>
+                              <div class="box-label">
+                                <h3>State Board</h3>
+                              </div>
+                            </div>
+                          </a>
+              
+                          <a class="boxs" style="text-decoration: none">
+                            <div class="box">
+                              <div class="box-svg">
+                                <img src="./Icons/arrow-in-the-target.svg" class="imagebox-svg" />
+                              </div>
+                              <div class="box-label">
+                                <h3>Archives</h3>
+                              </div>
+                            </div>
+                          </a>
+              
+                          <a class="boxs" style="text-decoration: none">
+                            <div class="box">
+                              <div class="box-svg">
+                                <img src="./Icons/arrow-in-the-target.svg" class="imagebox-svg" />
+                              </div>
+                              <div class="box-label">
+                                <h3>Notes</h3>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="next-prev">
+                          <button class="prev" aria-label="Prev">
+                            <img src="./Icons/forwardButton.svg" alt="prev" class="iconicon prev-icon" />
+                          </button>
+                          <button class="next" aria-label="Next">
+                            <img src="./Icons/forwardButton.svg"  alt="next" class="iconicon next-icon" />
+                          </button>
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>                 
+                  <div class="middleContent4">
+                    <div class="facultyText">
+                        <p id="facultyText1">Our Faculties</p>
+                        <p id="facultyText2">We’re having India’s best faculties to provide you with the best!</p>
+                    </div>
+                    <div class="g">
+                        <div class="facultyDisplay facultyDisplayAlt">
+                            <div class="facultyData facultyDataAlt">
+                                <img src="./Icons/maleTeacher1.svg">
+                                <p id="facultyName">Ravi Panchal</p>
+                                <p id="facultyExp">IIT Kharagpur | 8 Years+ Exp.</p>
+                            </div>
+                            <div class="facultyData facultyDataAlt">
+                                <img src="./Icons/maleTeacher1.svg">
+                                <p id="facultyName">Vishant Sehrawat</p>
+                                <p id="facultyExp">IIT Bombay | 6 Years+ Exp.</p>
+                            </div>
+                            <div class="facultyData facultyDataAlt">
+                                <img src="./Icons/maleTeacher1.svg">
+                                <p id="facultyName">Vineet Kumar</p>
+                                <p id="facultyExp">IIT Prayagraj | 8 Years+ Exp.</p>
+                            </div>
+                            <div class="facultyData facultyDataAlt">
+                                <img src="./Icons/maleTeacher1.svg">
+                                <p id="facultyName">Ajay Kumar</p>
+                                <p id="facultyExp">IIT Indore | 15 Years+ Exp.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourresultbutton1">
+                        <div>
+                            <button class="ourresultbuttonnext1" >
+                                <img src="./Icons/forwardButton.svg" class="iconify  iconicon ">
+                            </button>
+                        </div>
+                        <div>
+                            <button class="ourresultbuttonprev1" >
+                                <img src="./Icons/forwardButton.svg" class="iconify  iconicon ourresultprev-icon">
+            
+                            </button>
+                        </div>
+                    </div>
+                </div>
+ 
+           <div class="middleContent5">
+                <div class="certifiedCourses">
+                    <div class="certifiedCoursesImage">
+                        <img src="./Icons/certifiedCourses.svg" >
+                    </div>
+                    <div class="certifiedCoursesText">
+                        <p id="certifiedCoursesText1">Certified Courses</p>
+                        <p id="certifiedCoursesText2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt tincidunt mi duis est sed egestas at at facilisis. Ac elementum eu sit ultricies habitant. Erat tristique et etiam fringilla laoreet. Massa arcu, lacus, amet placerat pellentes que id euismod aenean.</p>
+                        <a id="explore1">Explore</a>
+                    </div>
+                </div>
+                <div class="homeTuition">
+                    <div class="certifiedCoursesImage1" >
+                        <img src="./Icons/homeTuition.svg">
+                    </div>
+                    <div class="homeTuitionText">
+                        <p id="homeTuitionText1">Home Tution Across India</p>
+                        <p id="homeTuitionText2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt tincidunt mi duis est sed egestas at at facilisis. Ac elementum eu sit ultricies habitant. Erat tristique et etiam fringilla laoreet. Massa arcu, lacus, amet placerat pellentes que id euismod aenean.</p>
+                        <a id="explore2">Explore</a>
+                    </div>
+                    <div class="certifiedCoursesImage certifiedCoursesImage2">
+                        <img src="./Icons/homeTuition.svg">
+                    </div>
+                </div>
+                <div class="qualifiedStaff">
+                    <div class="certifiedCoursesImage">
+                        <img src="./Icons/staff.svg">
+                    </div>
+                    <div class="qualifiedStaffext">
+                        <p id="qualifiedStaffText1">Highly Qualified Staff</p>
+                        <p id="qualifiedStaffText2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt tincidunt mi duis est sed egestas at at facilisis. Ac elementum eu sit ultricies habitant. Erat tristique et etiam fringilla laoreet. Massa arcu, lacus, amet placerat pellentes que id euismod aenean.</p>
+                        <a id="explore3">Explore</a>
+                    </div>
+                </div>
+            </div> 
+
+           <div class=" middleContent6 sixthpart">
+                <div class="resultText">
+                    <div id="resultText1" class="OurResults">Our Results</div>
+                    <div id="resultText2" class="Wejustdon’t">We just don’t say it! We have proved it with brilliance over and
+                        again.</div>
+                </div>
+                <div class=" resultDisplay flexourresult flexourresultop" >
+                   
+                        <div class=" resultData flexourresult1 ">
+                            <p class="img1our">
+                                <img src="./Icons/result1.svg" class="img1our1" alt="Italian Trulli">
+                            </p>
+                            <div id="studentMarks" class="ninetyninepointseven">99.7%</div>
+                            <div id="studentClass" class="CBSEClass12">CBSE | Class 12 </div>
+                            <hr>
+                            <div id="studentAbout" class="Loremipsumdolorsitametconsectetur">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Tincidunt tincidunt mi duis est sed egestas at at facilisis. </div>
+                            <div id="studentName" class="UditNarayan">Vineet Kumar</div>
+                            <div id="studentLocation" class="DelhiIndia"> Delhi, India</div>
+        
+                        </div>
+                        <div class=" resultData flexourresult1 flexourresult2">
+                            <p class="img1our"><img src="./Icons/result2.svg" class="img1our1" alt="Italian Trulli"></p>
+                            <div id="studentMarks" class="ninetyninepointseven">99.7%</div>
+                            <div id="studentClass" class="CBSEClass12">CBSE | Class 12 </div>
+                            <hr>
+                            <div id="studentAbout" class="Loremipsumdolorsitametconsectetur">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Tincidunt tincidunt mi duis est sed egestas at at facilisis. </div>
+                            <div id="studentName" class="UditNarayan">Priyanka Bisht</div>
+                            <div id="studentLocation" class="DelhiIndia"> Delhi, India</div>
+        
+                        </div>
+                        <div class=" resultData flexourresult1 flexourresult2">
+                            <p class="img1our"><img src="./Icons/result3.svg" class="img1our1" alt="Italian Trulli"></p>
+                            <div id="studentMarks" class="ninetyninepointseven">99.7%</div>
+                            <div id="studentClass" class="CBSEClass12">CBSE | Class 12 </div>
+                            <hr>
+                            <div id="studentAbout" class="Loremipsumdolorsitametconsectetur">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Tincidunt tincidunt mi duis est sed egestas at at facilisis. </div>
+                            <div id="studentName" class="UditNarayan">Kavita Sharma</div>
+                            <div id="studentLocation" class="DelhiIndia"> Delhi, India</div>
+        
+                        </div>                  
+                        <div class=" resultData flexourresult1 flexourresult2">
+                            <p class="img1our"><img src="./Icons/result2.svg" class="img1our1" alt="Italian Trulli"></p>
+                            <div id="studentMarks" class="ninetyninepointseven">99.7%</div>
+                            <div id="studentClass" class="CBSEClass12">CBSE | Class 12 </div>
+                            <hr>
+                            <div id="studentAbout" class="Loremipsumdolorsitametconsectetur">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Tincidunt tincidunt mi duis est sed egestas at at facilisis. </div>
+                            <div id="studentName" class="UditNarayan">Priyanka Bisht</div>
+                            <div id="studentLocation" class="DelhiIndia"> Delhi, India</div>
+        
+                        </div>
+                        <div class=" resultData flexourresult1 flexourresult2">
+                            <p class="img1our"><img src="./Icons/result3.svg" class="img1our1" alt="Italian Trulli"></p>
+                            <div id="studentMarks" class="ninetyninepointseven">99.7%</div>
+                            <div id="studentClass" class="CBSEClass12">CBSE | Class 12 </div>
+                            <hr>
+                            <div id="studentAbout" class="Loremipsumdolorsitametconsectetur">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Tincidunt tincidunt mi duis est sed egestas at at facilisis. </div>
+                            <div id="studentName" class="UditNarayan">Kavita Sharma</div>
+                            <div id="studentLocation" class="DelhiIndia"> Delhi, India</div>
+        
+                        </div>
+                        <div class=" resultData flexourresult1 flexourresult2">
+                            <p class="img1our"><img src="./Icons/result1.svg" class="img1our1" alt="Italian Trulli"></p>
+                            <div id="studentMarks" class="ninetyninepointseven">99.7%</div>
+                            <div id="studentClass" class="CBSEClass12">CBSE | Class 12 </div>
+                            <hr>
+                            <div id="studentAbout" class="Loremipsumdolorsitametconsectetur">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Tincidunt tincidunt mi duis est sed egestas at at facilisis. </div>
+                            <div id="studentName" class="UditNarayan">Vineet Kumar</div>
+                            <div id="studentLocation" class="DelhiIndia" class="DelhiIndia"> Delhi, India</div>
+        
+                        </div>
+        
+                   
+        
+                </div>
+                <div class="ourresultbutton next-prev">
+
+
+                    <button class=" ourresultbuttonprev prev" aria-label="Prev">
+                        <img src="./Icons/forwardButton.svg" alt="prev" class="iconicon prev-icon" />
+                      </button>
+                      <button class=" ourresultbuttonnext next" aria-label="Next">
+                        <img src="./Icons/forwardButton.svg"  alt="next" class="iconicon next-icon" />
+                      </button>
+                   
+                       
+                </div>
+            </div> 
+
+            <div class="component-4b">
+                <div class="middleConten7Text slider-titleb">
+                    <p id="middleConten7text1">We're Family Together</p>
+                </div>
+                <div class="middleContent7Slide sliderb">
+                    <div class="slider-innerb">
+                        
+                    <a  class="phsl13 box-1" style="text-decoration:none; ">
+                        <div class="box1b">
+                    <div class="middleContent7details box-labelb">
+                        <div class="middleContent7video">
+                            <iframe class="video1" src="https://www.youtube.com/embed/Q33KBiDriJY" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="middleContent7text2 video-text">
+                            <p id="middleContent7text2" >There is no one who loves pain itself, who seeks after it and wants to
+                                have it, simply because it is pain!</p>
+                            <p id="middleContent7text3">Vineet Kandroo</p>
+                        </div>
+                    </div>
+                    </div>
+                    </a>
+                    <a  class="phsl13 box-1" style="text-decoration:none; ">
+                        <div class="box1b">
+                    <div class="middleContent7details box-labelb">
+                        <div class="middleContent7video">
+                            <iframe class="video1" src="https://www.youtube.com/embed/Q33KBiDriJY" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="middleContent7text2 video-text">
+                            <p id="middleContent7text2" >There is no one who loves pain itself, who seeks after it and wants to
+                                have it, simply because it is pain!</p>
+                            <p id="middleContent7text3">Vineet Kandroo</p>
+                        </div>
+                    </div>
+                    </div>
+                    </a>
+                    <a  class="phsl13 box-1" style="text-decoration:none; ">
+                        <div class="box1b">
+                    <div class="middleContent7details box-labelb">
+                        <div class="middleContent7video">
+                            <iframe class="video1" src="https://www.youtube.com/embed/Q33KBiDriJY" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="middleContent7text2 video-text">
+                            <p id="middleContent7text2">There is no one who loves pain itself, who seeks after it and wants to
+                                have it, simply because it is pain!</p>
+                            <p id="middleContent7text3" >Vineet Kandroo</p>
+                        </div>
+                    </div>
+                    </div>
+                    </a>
+                    <a  class="phsl13 box-1" style="text-decoration:none; ">
+                        <div class="box1b">
+                    <div class="middleContent7details box-labelb">
+                        <div class="middleContent7video">
+                            <iframe class="video1" src="https://www.youtube.com/embed/Q33KBiDriJY" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="middleContent7text2 video-text">
+                            <p id="middleContent7text2" >There is no one who loves pain itself, who seeks after it and wants to
+                                have it, simply because it is pain!</p>
+                            <p id="middleContent7text3">Vineet Kandroo</p>
+                        </div>
+                    </div>
+                    </div>
+                    </a>
+                    <a  class="phsl13 box-1" style="text-decoration:none; ">
+                        <div class="box1b">
+                    <div class="middleContent7details box-labelb">
+                        <div class="middleContent7video">
+                            <iframe class="video1" src="https://www.youtube.com/embed/Q33KBiDriJY" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <div class="middleContent7text2 video-text">
+                            <p id="middleContent7text2" >There is no one who loves pain itself, who seeks after it and wants to
+                                have it, simply because it is pain!</p>
+                            <p id="middleContent7text3">Vineet Kandroo</p>
+                        </div>
+                    </div>
+                    </div>
+                    </a>
+               
+        
+                     
+                    </div>
+                     <div class="bothbuttonour">
+                    <button class="prevprevb">
+                        <img src="./Icons/whiteForwardButton.svg" class="weareimgone"></img>
+                       </button>
+                      <button class="nextnextb">
+                        <img src="./Icons/whiteForwardButton.svg" class="weareimgtwo"></img>
+                      </button>
+                   
+                </div>
+                </div>
+               
+            </div> 
+         
+   <!--   <div class="eightpart">
+        <div class="eightpartone">
+            <img  src="./Icons/invertedComma.svg"class="invertedimg">
+           
+                <p  class="eightpartLet’sHearFrom">Let’s  Hear From</p>
+                <p  class="eightpartalphalytes">Alphalytes</p>
+          
+            <div class="eightpartbuttonnextprev">
+                <button class=" eightpartprevbuutton" id="prev4" onclick=prevslider4()>
+                    <img src="./Icons/forwardButton.svg" class=" eightpartprev eightpartnexticon" ></img>
+
+                    <button class="eightpartnext" onclick=nexslider() id="nex4" >
+                        <img src="./Icons/forwardButton.svg" class=" eightpartnexticon" data-icon="ic:round-navigate-next"></img>
+                    </button>
+                  </button>
+               
+            </div>
+        </div>
+        
+        <div class="eightparttwo">
+            <div class="eightpartcards" id="slider4">
+                <div class="slider4">
+                <div class="cardnoone">
+                    <div class="imgmanedes">
+                        <div>
+                            <img src="./Icons/employeephoto1.svg" class="eightpartcardimgone" >
+                        </div>
+                        <div >
+                            <p class="eightpartDivyaSingh">Divya Singh</p>
+                            <p class="eightpartSoftwareEngineer1">Software Engineer</p>
+                        </div>
+                    </div>
+                    <div class="cardonetext">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, turpis cum amet praesent in auctor lectus. Mauris risus fringilla nibh vel sed ipsum tellus.</p>
+                    </div>
+                </div>
+                <div class="cardnotwo">
+                    <div class="imgmanedes">
+                        <div>
+                            <img src="./Icons/employeephoto2.svg" class="eightpartcardimgone" >
+                        </div>
+                        <div >
+                            <p  class="eightpartAnjaliSharma">Anjali Sharma</p>
+                            <p class="eightpartProductDesignerr1">Graphic Designer</p>
+                        </div>
+                    </div>
+                    <div class="employeeFeedback cardonetext">
+                        <p id="employeeFeedback ......">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, turpis cum amet praesent in auctor lectus. Mauris risus fringilla nibh vel sed ipsum tellus.</p>
+                    </div>
+                </div>
+                <div class="cardnotwo">
+                    <div class="imgmanedes">
+                        <div>
+                            <img src="./Icons/employeephoto1.svg" class="eightpartcardimgone" >
+                        </div>
+                        <div >
+                            <p  class="eightpartAsthaVerma">Astha Verma</p>
+                            <p class="eightpartSoftwareEngineer2">Team Lead</p>
+                        </div>
+                    </div>
+                    <div class="employeeFeedback cardonetext">
+                        <p id="employeeFeedback ......">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, turpis cum amet praesent in auctor lectus. Mauris risus fringilla nibh vel sed ipsum tellus.</p>
+                    </div>
+                </div>
+                <div class="cardnotwo">
+                    <div class="imgmanedes">
+                        <div>
+                            <img src="./Icons/employeephoto2.svg" class="eightpartcardimgone" >
+                        </div>
+                        <div >
+                            <p  class="eightpartChetnaSingh">Chetna Singh</p>
+                            <p  class="eightpartProductDesignerr2">Accountant</p>
+                        </div>
+                    </div>
+                    <div class="employeeFeedback cardonetext">
+                        <p id="employeeFeedback ......">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, turpis cum amet praesent in auctor lectus. Mauris risus fringilla nibh vel sed ipsum tellus.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>      -->
+           
+            <div id="footer">
+            </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+        <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+            });
+        </script>
+        <script src="./home.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,200 @@
+html{
+  font-size: 10px;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+}
+
+.courses1 {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin-left: 3.33%;
+  margin-top: 9.2rem;
+  color: #808080;
+}
+.courses1>img{
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.coursesText {
+  width: auto;
+  margin-left: 1.0rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #808080;
+}
+.className {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin-left: 3.33%;
+  margin-top: 1.0rem;
+}
+.classNameText {
+  width:auto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  color: #2851e7;
+}
+.text {
+  margin-top: 2.0rem;
+  margin-left: 3.33%;
+  margin-right: 3.33%;
+}
+.text1 {
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.0rem;
+  line-height: 3.6rem;
+  color: #808080;
+
+}
+.selectYourSubject{
+   width: 100%;
+  height: auto;
+  background: #F5F8FE;
+  align-items: center;
+  padding-top: 4.0rem;
+}
+
+
+.subjectText{
+  text-align: center;
+}
+
+.subjectList{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.0rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.subjectList a{
+    text-decoration: none;
+}
+
+.subjectText1{
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    text-align: center;
+    color: #121212;
+    margin-bottom: .5rem;
+}
+
+.subjectText2{
+    font-weight: 500;
+    font-size: 2.0rem;
+    line-height: 2.8rem;
+    text-align: center;
+    color: #808080;
+    margin-top: .5rem;
+}
+
+.sub{
+  min-width: 24.0rem;
+  min-height: 16.0rem;
+  margin: 4.0rem;
+  background: #FFFDFD;
+  border-radius: .8rem;
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sub>img{
+  margin-top: 3.2rem;
+  width: 6.0rem;
+  height: 3.6rem;
+}
+.subjectName{
+  width: auto;
+margin-top: 3.2rem;
+font-weight: bold;
+font-size: 2.0rem;
+line-height: 2.8rem;
+color: #121212;
+}
+
+.selectYourSubject{
+    margin-top: 8.0rem;
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  html {
+    font-size: 8px;
+    } 
+  }
+ 
+@media (min-width: 481px) and (max-width: 700px) {
+    html {
+      font-size: 6px;
+      } 
+    }
+@media (max-width: 480px)
+{ 
+  .courses1{
+    justify-content: center;
+    margin-top: 3.2rem;
+    margin-left: 0;
+  }
+  .courses1>img{
+    display: none;
+  }
+  .coursesText{
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+  .className{
+    justify-content: center;
+    margin-top: 0.8rem;
+  }
+  .classNameText{
+    font-size: 2.0rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+  }
+  .text1{
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+  .subjectText1{
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+  }
+  .subjectText2{
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+  }
+  .sub{
+    margin: 2rem;
+    min-width: 14.0rem;
+    min-height: 10.0rem;
+  }
+  .sub>img{
+    margin-top: 2rem;
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  .subjectName{
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}

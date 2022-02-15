@@ -1,0 +1,359 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+}
+.middleContent {
+  display: flex;
+  width: auto;
+  margin-left:40px;
+  margin-right: 6rem;
+  margin-top:72px;
+  gap: 3rem;
+}
+.middleContentRight{
+  display: block;
+  width:100%;
+  margin-right:0;
+}
+.maincourseHeading{
+  display: block;
+  margin-left: 14px;
+}
+.courses1 {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 32px;
+  color: #808080;
+}
+.coursesText1 {
+  margin-left: 10px;
+  width: auto;
+  height: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #808080;
+}
+.coursesText2{
+  margin-top:12px;
+  width: auto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  color: #2851E7;
+  margin-bottom: 30px;
+}
+.middleVideoSpace {
+  display: block;
+  width: 100%;
+  margin-bottom: 2.0rem;
+}
+.middleVideoSpace>div:hover 
+{
+  background-color:#F5F8FE  ;
+}
+.videoSpace {
+  display:flex;
+  width: auto;
+  height: fit-content;
+  flex-shrink: 0;
+  align-items: center;
+  padding: 10px;
+}
+.thumbnailVideo {
+  width:fit-content; 
+  height:fit-content ;
+  border-radius: .4rem;
+}
+.chapter{
+  display: block;
+  height: fit-content;
+  width: auto;
+  margin-left: 20px;
+}
+.chapterText1 a {
+  text-decoration: none;
+  font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 36px;
+color: #121212;
+}
+.chapterText2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #808080;
+}
+.middleVideoSpaceFlex{
+    display: flex;
+}
+.dextopvideoicon{
+  display: none;
+}
+.SideBox{
+height: fit-content;
+width: fit-content;
+margin-left:40px ;
+padding: 16px 116px 40px 42.33px;
+background: #F5F8FE;
+}
+.SideBoxLineFlex{
+display: flex;
+padding-top: 24px;
+}
+.SideBoxText{
+font-weight: bold;
+font-size: 20px;
+line-height: 26px;
+color: #2851E7;
+margin-left: 14.34px;    
+}
+@media(max-width:1100px){
+
+.chapter{
+display: block;
+height: fit-content;
+width: auto;
+margin-left: 20px;
+}
+.chapterText1 a {
+text-decoration: none;
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 36px;
+color: #121212;
+}
+.chapterText2 {
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 24px;
+color: #808080;
+}
+
+.SideBox{
+height: fit-content;
+width: fit-content;
+margin-left:40px ;
+padding: 10px 50px 30px 20.33px;
+background: #F5F8FE;
+}
+.SideBoxLineFlex{
+display: flex;
+padding-top: 24px;
+}
+.SideBoxText{
+font-weight: bold;
+font-size: 15px;
+line-height: 26px;
+color: #2851E7;
+margin-left: 14.34px;    
+}
+}
+@media(max-width:820px){
+
+.middleVideoSpaceFlex{
+display: block;
+}
+.middleVideoSpace {
+  display: block;
+  width: 100%;
+  margin-bottom: 2.0rem;
+}
+.middleVideoSpace>div:hover 
+{
+  background-color:#F5F8FE  ;
+}
+.videoSpace {
+  display: flex;
+  width: auto;
+  height: fit-content;
+  flex-shrink: 0;
+  padding: 10px;
+  align-items: center;
+}
+.thumbnailVideo {
+  width:fit-content; 
+  height:fit-content ;
+  border-radius: .4rem;
+  display: none;
+}
+.chapter{
+  display: block;
+  height: fit-content;
+  width: 100%;
+  margin-left: 5px;
+}
+.chapterText1 a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 21px;
+}
+.chapterText2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  padding-top: 10px;
+  line-height: 16px;
+  color: #808080;
+}
+.SideBoxLineFlex>img{
+margin-left: 22.33px;
+}
+.SideBox{
+  height: fit-content;
+  width: 100%;
+  margin-left:0px ;
+  padding: 0 0 24px 0;
+  background: #F5F8FE;
+}
+.SideBoxLineFlex{
+    display: flex;
+    padding-top: 24px;
+}
+.SideBoxText{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2851E7;
+  margin-left: 6.34px;   
+}
+.dextopvideoicon{
+display: block;
+}
+}
+
+@media(max-width:480px){
+.middleContent {
+  display: flex;
+  width: auto;
+  margin-left:0;
+  margin-right:0;
+  margin-top:0;
+  gap: 0;
+}
+.middleContentRight{
+  display: block;
+  width:100%;
+  margin-right:0;
+}
+.maincourseHeading{
+  display: block;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 32px;
+  width: auto;
+  height: 86px;
+}
+.backicon123{display: none;}
+.courses1 {
+display: block;
+text-align: center;
+width: auto;
+}
+.coursesText1 {
+margin-left: 10px;
+width: auto;
+height: 0px;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+text-align: center;
+color: #808080;
+}
+.coursesText2{
+margin-top: 8px;
+width: auto;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 18px;
+text-align: center;
+color: #2851E7;
+}
+.middleVideoSpaceFlex{
+display: block;
+}
+.middleVideoSpace {
+  display: block;
+  width: 100%;
+  margin-bottom: 2.0rem;
+}
+.middleVideoSpace>div:hover 
+{
+  background-color:#F5F8FE  ;
+}
+.videoSpace {
+  display: flex;
+  width: auto;
+  height: fit-content;
+  flex-shrink: 0;
+  align-items: center;
+}
+.thumbnailVideo {
+  width:fit-content; 
+  height:fit-content ;
+  border-radius: .4rem;
+  display: none;
+}
+.chapter{
+  display: block;
+  height: fit-content;
+  width: 100%;
+  margin-left: 20px;
+}
+.chapterText1 a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+.chapterText2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #808080;
+}
+.SideBoxLineFlex>img{
+margin-left: 22.33px;
+}
+.SideBox{
+    height: fit-content;
+    width: 100%;
+    margin-left:0px ;
+    margin-top: 20px;
+    padding: 0 0 24px 0;
+    background: #F5F8FE;
+}
+.SideBoxLineFlex{
+    display: flex;
+    padding-top: 24px;
+}
+.SideBoxText{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #2851E7;
+  margin-left: 6.34px;   
+}
+.dextopvideoicon{
+display: block;
+margin-right: 20px;
+}
+}
+

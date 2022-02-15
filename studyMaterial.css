@@ -1,0 +1,341 @@
+html{
+    font-size: 10px;
+}
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-style: normal;
+}
+
+.subMainDiv{
+    margin: 0;
+    width: auto;
+}
+.studyMaterialBox{
+    margin: 7.0rem 6.0rem 0;
+    padding: 0;
+    width: auto;
+}
+
+.studyMaterialText{
+    display: flex;
+    gap: 1.2rem;
+    width: auto;
+}
+.studyMaterialText>a{
+    display: flex;
+    align-items: center;
+}
+.studyMaterialText{
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #808080;
+}
+.backButton{
+    border: none;
+    background-color: transparent;
+    background: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.className1{
+    width: auto;
+}
+.className{
+    display:flex;
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    color: #2851E7;
+    margin-top: 1.2rem;
+}
+.classDescription1{
+    margin-top: 4.0rem;
+    width: auto;
+    text-justify: inter-word;
+}
+
+.classDescription{
+    font-weight: 500;
+    font-size: 2.0rem;
+    line-height: 3.6rem;
+    color: #808080;
+    text-justify: auto;
+}
+.selectYourSubject{
+    width: auto;
+    background: #F5F8FE;
+    align-items: center;
+}
+.subjectText, .watchAndListenText, .importantLinksText{
+    text-align: center;
+    width: auto;
+}
+.subjectText1 {
+    padding-top: 1rem;
+    display: block;
+}
+.subjectText1, .watchAndListenText1, .importantLinksText1{
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    text-align: center;
+    color: #121212;
+    margin-bottom: .5rem;
+}
+.subjectText2, .watchAndListenText2, .importantLinksText2{
+    font-weight: 500;
+    font-size: 2.0rem;
+    line-height: 2.8rem;
+    text-align: center;
+    color: #808080;
+    margin-top: .5rem;
+    padding: 0 1.1rem;
+}
+.subjectList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.0rem 0;
+    flex-wrap: wrap;
+}
+.subject{
+    width: 15%;
+    min-width: 24.0rem;
+    min-height: 16.0rem;
+    margin: 4.0rem;
+    background: #FFFDFD;
+    border-radius: .8rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subject a{
+    display: flex;
+    gap: 2.0rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+.subjectName{
+
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #121212;
+    width: auto;
+    padding: 0 1.0rem;
+}
+
+.selectYourSubject,.watchAndListen{
+    margin-top: 8.0rem;
+}
+
+.watchAndListen{
+  width: auto;
+}
+
+.video video {
+    width: 100%;
+}
+
+.watchAndListenVideos{
+    margin: 4.0rem 0;
+    border-radius: 1.2rem;
+}
+
+.watchAndListenVideos div{
+    height: auto;
+    border-radius: 1.2rem;
+}
+
+.targetSlider{
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.targetSlider .prev {
+    transform-origin: center;
+    transform: rotate(180deg);
+}
+.targetSlider>button{
+    background-color:transparent;
+    border: none;
+}
+.targetSlider>button>img{
+    width: 4.0rem;
+    height: 4.0rem;
+    margin: 0 .5rem;
+    background-color:none;
+    cursor: pointer;
+    display: block;
+}
+
+.importantLinks{
+    margin: 8.0rem 0 1.0rem;
+    padding: 1.0rem 0 2.0rem 0;
+}
+.importantLinksSubject
+{
+    margin-top: 4.0rem;
+    width: 100%;
+}
+.SubjectName{    
+    width:auto;
+    padding: 0;
+    margin: 1.0rem 0 0 6.0rem;
+}
+.SubjectName1{
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    color: #121212;
+    margin-bottom: 0;
+}
+.SubjectDetails{
+    margin: 0 0 5.0rem 0;
+}
+.SubjectDetails>div:nth-child(odd){
+    background: #eef2fcb6;
+}
+.SubjectDetails1{
+    display: flex;
+    padding: .5rem 0;
+}
+hr{
+    margin: 0 0 3.0rem 0;
+    width: 6.0rem;
+    background-color: #2851E7;
+}
+.SubjectChapterName{
+    font-weight: 500;
+    font-size: 2.0rem;
+    line-height: 3.6rem;
+    min-width: 23.0rem;
+    margin-left: 6.0rem;
+    color: #121212;
+    display: flex;
+    align-items: center;
+}
+.SubjectTopicName{
+    font-weight: 500;
+    font-size: 2.0rem;
+    line-height: 3.6rem;
+    margin: 0 6rem 0 20.0rem;
+    min-width: 15.0rem;
+    width: auto;
+    color: #2851E7;
+    display: flex;
+    align-items: center;
+}
+@media (max-width:900px) { 
+    html{
+    font-size: 8px;
+    }
+    
+    .SubjectTopicName{
+        margin: 0 5rem 0 5rem;
+    }
+}
+@media  screen and (max-width:480px){
+    html{
+        font-size: 7.5px;
+    }
+    .studyMaterialBox{
+        margin-top: 3.2rem;
+    }
+    .backButton{
+        display: none;
+    }
+    .studyMaterialText{
+        justify-content: center;
+        font-size: 1.6rem;
+    }
+    .className{
+        margin-top: 0;
+        justify-content: center ;
+        font-size: 2.0rem;
+        line-height: 2rem;
+    }
+    .classDescription{
+        margin-top: 3.2rem;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+    .subjectText1{
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+    .subjectText2{
+        font-size: 1.4rem;
+        line-height: 2.0rem;
+    }
+    .subjectList{
+        gap: 2.4rem  ;
+    }
+    .subject{
+        min-width: 16.0rem;
+        min-height: 11.0rem;
+        margin:2.4rem;
+    }
+    .subject a>img{
+        height: 3.2rem;
+        width: 3.2rem; 
+    }
+    .SubjectName{
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+    hr{
+        display: none;
+    }
+    .watchAndListenText1{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+    .watchAndListenText2{
+        font-size: 1.4rem;
+        line-height: 2.0rem;
+    }
+    .watchAndListenVideos>div>img{
+        max-width: 100%;
+        max-width: 100%;
+    }
+    
+    .importantLinksText1{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+    .importantLinksText2{
+        font-size: 1.4rem;
+        line-height: 2.0rem;
+    }
+    .SubjectName1{
+    
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .SubjectDetails1{
+        display: block;
+    }
+    .SubjectChapterName{
+        font-weight: bold;
+        margin-left: 2.0rem;
+        font-size: 1.4rem;
+    }
+    .SubjectTopicName{
+        margin-left: 2.0rem;
+        font-size: 1.4rem;
+
+    }
+
+}

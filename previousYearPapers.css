@@ -1,0 +1,190 @@
+html {
+  font-size: 10px;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.studyMaterialBox {
+  width: auto;
+  margin: 7.2rem 6rem 0;
+}
+
+.studyMaterialText {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  text-decoration: none;
+}
+
+.studyMaterialSubjectName {
+  font-weight: 500;
+  font-size: 2.4rem;
+  margin: 0;
+  line-height: 3.2rem;
+  color: #808080;
+}
+
+.studyMaterialResourceName {
+  font-weight: bold;
+  font-size: 3.2rem;
+  color: #2851e7;
+  margin: 0;
+  margin-top: 1.2rem;
+}
+
+.PYPclassName {
+  margin-top: 4rem;
+}
+
+.className {
+
+  font-weight: 500;
+  font-size: 2.8rem;
+  text-align: center;
+  color: #808080;
+  margin: 0;
+}
+.year {
+  margin-top: 40px;
+}
+.yearName {
+  width: auto;
+  font-weight: bold;
+  font-size: 3.2rem;
+  color: #2851e7;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.yearPapers > div {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.paperList a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #2851e7;
+}
+
+.paperName {
+  margin-left: 6rem;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 5.6rem;
+  color: #212121;
+  width: 50%;
+}
+.questions {
+  width: 25%;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 3.6rem;
+  color: #2851e7;
+}
+
+.solutions {
+  width: 25%;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 3.6rem;
+  color: #2851e7;
+}
+
+.yearPapers > div:nth-child(odd) {
+  background-color: #eef2fcb6;
+}
+@media (max-width: 1025px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 835px) {
+  html {
+    font-size: 6.5px;
+  }
+}
+@media (max-width: 540px) {
+  html {
+    font-size: 9px;
+  }
+  .backButton {
+    display: none;
+  }
+  .studyMaterialText {
+    display: flex;
+    justify-content: center;
+  }
+  .studyMaterialSubjectName {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .studyMaterialResourceName {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-top: 0.8rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .PYPclassName {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+  }
+  .className {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    color: #121212;
+  }
+
+  .yearName {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+  .yearPapers > div {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .paperName {
+    margin-left: 0;
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+  .questions {
+    width: 49%;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+  .solutions {
+    width: 49%;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+}

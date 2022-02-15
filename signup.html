@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create your account</title>
+        <meta charset="UTF-8" lang="en" >
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="signup.css">
+    </head>
+    <script src="signup.js">
+    </script>
+    <body>
+        <div class="mainDiv">
+            <div class="leftPane">
+                <div class="formContainer">
+                    <div class="logo">
+                            <img alt="alphalyteLogo" src="./Icons/loader.svg" style="width: 23.33px; height: 23.33px; border-radius: 50%; padding-top: 3px;">
+                            <p id="logoText">Alphalyte</p>
+                    </div>
+                        <button class="backButton" onclick="history.back()">
+                            <img src="./Icons/backButton.svg" style="width: 23.33px; height: 23.33px; border-radius: 50%;">
+                        </button>
+                    <div class="signupText">
+                        <p id="signupText1">Create your account!</p>
+                        <p id="signupText2">Already have an account? <a href="login.html" style="color:blue; text-decoration: none; font-weight: bold;">Login Now</a></p>
+                    </div>
+                    <div class="signupForm">
+                        <div class="nameDetails">
+                            <div class="firstName">
+                                <input id="firstName" type="text" placeholder="First Name*" onkeyup="signupColor()"  required minlength="2" maxlength="20">
+                            </div>
+                            <div class="lastName">
+                                <input id="lastName" type="text" placeholder="Last Name" required minlength="2" maxlength="20">
+                            </div>
+                        </div>
+                        <div class="firstNameError errorMessage signuperrormsg" style="visibility: hidden;">
+                            First name cannot be empty or less than 2 characters.
+                        </div>
+                        <div class="inputMobile">
+                            <input id="inputMobile" type="text" placeholder="Mobile Number*"  onkeyup="signupColor()" required maxlength="10">
+                        </div>
+                        <div class="mobileError errorMessage" style="visibility: hidden;">
+                            Mobile Number cannot be empty or less than 10 numbers.
+                        </div>
+                        <div class="inputPassword">
+                            <input id="inputPassword" type="password" placeholder="Create Password*" onkeyup="signupColor()" required minlength="8" maxlength="25">
+                            <button id="showPassword"><img src="./Icons/view_hide_icon_124813 1.svg" onclick="showPassword()"></button>
+                            <button id="hidePassword" style="display: none;"><img src="./Icons/eye.svg" onclick="showPassword()"></button>
+                        </div>
+                        <div class="passwordError errorMessage" style="visibility: hidden;">
+                            Password cannot be empty or less than 8 characters.
+                        </div>
+                        <div class="signupButtonMain">
+                            <button class="signupButton" type="submit" onclick="signupError(); signupSuccess();">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightPane">
+                <div class="image">
+                    <img src="./Icons/Woman.svg">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

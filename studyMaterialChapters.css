@@ -1,0 +1,160 @@
+html {
+  font-size: 10px;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+.studyMaterialBox {
+  width: auto;
+  margin-left: 6rem;
+  margin-top: 72px;
+}
+
+.studyMaterialText {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: transparent;
+  background: none;
+  border: none;
+}
+
+.studyMaterialSubjectName {
+  width: auto;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: #808080;
+}
+
+.studyMaterialChapterName {
+  display: flex;
+  width: auto;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  color: #2851e7;
+}
+
+.studyResources {
+  background: #f5f8fe;
+}
+
+.studyResourcesText {
+  margin-top: 4rem;
+  width: auto;
+  text-align: center;
+}
+.studyResources a {
+  text-decoration: none;
+}
+.studyResourcesText1 {
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  text-align: center;
+  color: #121212;
+  margin-bottom: 0.5rem;
+}
+.studyResourcesText2 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: center;
+  color: #808080;
+  margin-top: 0.5rem;
+}
+.studyResourcesList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.studyResources img {
+  height: 5rem;
+  width: 24rem;
+  margin-top: 3rem;
+}
+.studyResourcesList div {
+  min-width: 24rem;
+  min-height: 16rem;
+  background: #fffdfd;
+  border-radius: 0.8rem;
+  margin: 3.9rem;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+.resourceName {
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #121212;
+}
+@media (min-width: 481px) and (max-width: 880px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .studyMaterialBox {
+    margin-top: 3.2rem;
+    margin-left: 0;
+  }
+  .studyMaterialText {
+    justify-content: center;
+    font-size: 1.6rem;
+  }
+  .backButton {
+    display: none;
+  }
+  .studyMaterialSubjectName {
+    justify-content: center;
+    font-size: 2rem;
+  }
+  .studyMaterialChapterName {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    justify-content: center;
+  }
+  .studyResourcesText1 {
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+  }
+  .studyResourcesText2 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .studyResourcesList div {
+    min-width: 14rem;
+    min-height: 10rem;
+    margin: 1.6rem 3.2rem;
+  }
+  .studyResources img {
+    height: 3.2rem;
+    width: 3.2rem;
+    margin-top: 2rem;
+  }
+  .resourceName {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+  }
+}

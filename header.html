@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="header.css" />
+    <script src="https://unpkg.com/alpinejs" defer></script>
+  </head>
+  <body
+    x-data="{ mobileSearch: false, mobileNav: false }"
+    x-bind:class="mobileNav ? 'stop' : ''"
+  >
+  <header class="header">
+    <div class="nav-desktop">
+      <div class="container">
+        <div class="nav-left">
+          <a href="/" class="logo">
+            <img src="Icons/loader.svg" loading="lazy" alt="logo" />
+            <span class="logo-text">Alphalyte</span>
+          </a>
+          <form class="form-search" x-data="{ focus: false }">
+            <label x-bind:class="focus ? 'focused' : ''">
+              <i class="icon icon-search"></i>
+              <input
+                type="text"
+                title="search"
+                x-on:focus="focus = true"
+                x-on:blur="focus = false"
+                placeholder="Search Courses, Classes, etc..."
+              />
+            </label>
+          </form>
+        </div>
+        <nav class="nav-top">
+          <ul>
+            <li class="hover-1">
+              <span class="nav-level">
+                Study Material
+                <i class="icon icon-dropdown"></i>
+              </span>
+              <ul class="level-box level-1">
+                <li class="hover-2">
+                  <div class="nav-level-1">
+                    <p>CBSE</p>
+                    <span>Find study material for CBSE here</span>
+                  </div>
+                  <ul class="level-box level-2">
+                    <li>
+                      <a class="nav-level-2" href="studyMaterial.html">
+                        <i class="icon-cap">
+                          <svg
+                            width="20"
+                            height="14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="m18.17 9.072-.011-1.914L20 6.128 9.973.84 0 6.234l3.998 2.295.008 1.365.001.108.037-.017a.296.296 0 0 0-.069.175c.003.67 2.712 1.202 6.054 1.183 3.341-.017 6.045-.579 6.043-1.248 0-.06-.031-.116-.072-.175l.036.017v-.109l-.007-1.37 1.733-1.078.01 1.695a.527.527 0 0 0-.322.489.52.52 0 0 0 .526.518.522.522 0 0 0 .52-.524.53.53 0 0 0-.326-.486Zm-8.143 1.81c-2.966.016-5.371-.31-5.374-.725-.002-.416 2.4-.765 5.366-.78 2.966-.017 5.37.307 5.372.722.003.415-2.398.767-5.364.783Zm5.865-3.534c-.401-.423-1.84-1.537-5.892-1.514-4.058.022-5.479 1.15-5.875 1.578l-.003-.404s1.151-1.751 5.875-1.776c4.72-.025 5.893 1.713 5.893 1.713l.002.403Zm1.661 2.848-.204 2.965c.632-.993 1.16-.624 1.16-.624l-.013-2.346c-.679.267-.943.005-.943.005Z"
+                              fill="#121212"
+                            />
+                          </svg>
+                        </i>
+                        <span>Class X</span>
+                      </a>
+                    </li>
+                    <!-- end second level first -->
+                    <li>
+                      <a class="nav-level-2">
+                        <i class="icon-cap">
+                          <svg
+                            width="20"
+                            height="14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="m18.17 9.072-.011-1.914L20 6.128 9.973.84 0 6.234l3.998 2.295.008 1.365.001.108.037-.017a.296.296 0 0 0-.069.175c.003.67 2.712 1.202 6.054 1.183 3.341-.017 6.045-.579 6.043-1.248 0-.06-.031-.116-.072-.175l.036.017v-.109l-.007-1.37 1.733-1.078.01 1.695a.527.527 0 0 0-.322.489.52.52 0 0 0 .526.518.522.522 0 0 0 .52-.524.53.53 0 0 0-.326-.486Zm-8.143 1.81c-2.966.016-5.371-.31-5.374-.725-.002-.416 2.4-.765 5.366-.78 2.966-.017 5.37.307 5.372.722.003.415-2.398.767-5.364.783Zm5.865-3.534c-.401-.423-1.84-1.537-5.892-1.514-4.058.022-5.479 1.15-5.875 1.578l-.003-.404s1.151-1.751 5.875-1.776c4.72-.025 5.893 1.713 5.893 1.713l.002.403Zm1.661 2.848-.204 2.965c.632-.993 1.16-.624 1.16-.624l-.013-2.346c-.679.267-.943.005-.943.005Z"
+                              fill="#121212"
+                            />
+                          </svg>
+                        </i>
+                        <span>Class VI</span>
+                      </a>
+                    </li>
+                    <!-- end second level second -->
+                  </ul>
+                  <!-- end second level nav -->
+                </li>
+                <!-- end first -->
+                <li class="hover-2">
+                  <div class="nav-level-1">
+                    <p>ICSE</p>
+                    <span>Find study material for ICSE here</span>
+                  </div>
+                  <ul class="level-box level-2">
+                    <li>
+                      <a class="nav-level-2">
+                        <i class="icon-cap">
+                          <svg
+                            width="20"
+                            height="14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="m18.17 9.072-.011-1.914L20 6.128 9.973.84 0 6.234l3.998 2.295.008 1.365.001.108.037-.017a.296.296 0 0 0-.069.175c.003.67 2.712 1.202 6.054 1.183 3.341-.017 6.045-.579 6.043-1.248 0-.06-.031-.116-.072-.175l.036.017v-.109l-.007-1.37 1.733-1.078.01 1.695a.527.527 0 0 0-.322.489.52.52 0 0 0 .526.518.522.522 0 0 0 .52-.524.53.53 0 0 0-.326-.486Zm-8.143 1.81c-2.966.016-5.371-.31-5.374-.725-.002-.416 2.4-.765 5.366-.78 2.966-.017 5.37.307 5.372.722.003.415-2.398.767-5.364.783Zm5.865-3.534c-.401-.423-1.84-1.537-5.892-1.514-4.058.022-5.479 1.15-5.875 1.578l-.003-.404s1.151-1.751 5.875-1.776c4.72-.025 5.893 1.713 5.893 1.713l.002.403Zm1.661 2.848-.204 2.965c.632-.993 1.16-.624 1.16-.624l-.013-2.346c-.679.267-.943.005-.943.005Z"
+                              fill="#121212"
+                            />
+                          </svg>
+                        </i>
+                        <span>Class VI</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- end second level nav -->
+                </li>
+                <!-- end second -->
+              </ul>
+            </li>
+            <li class="hover-1">
+              <span class="nav-level"
+                >Courses <i class="icon icon-dropdown"></i
+              ></span>
+              <ul class="level-box level-1">
+                <li class="hover-2">
+                  <div class="nav-level-1">
+                    <p>CBSE</p>
+                    <span>Find study material for CBSE here</span>
+                  </div>
+                  <ul class="level-box level-2">
+                    <li>
+                      <a class="nav-level-2"   href="courses.html">
+                        <i class="icon-cap">
+                          <svg
+                            width="20"
+                            height="14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="m18.17 9.072-.011-1.914L20 6.128 9.973.84 0 6.234l3.998 2.295.008 1.365.001.108.037-.017a.296.296 0 0 0-.069.175c.003.67 2.712 1.202 6.054 1.183 3.341-.017 6.045-.579 6.043-1.248 0-.06-.031-.116-.072-.175l.036.017v-.109l-.007-1.37 1.733-1.078.01 1.695a.527.527 0 0 0-.322.489.52.52 0 0 0 .526.518.522.522 0 0 0 .52-.524.53.53 0 0 0-.326-.486Zm-8.143 1.81c-2.966.016-5.371-.31-5.374-.725-.002-.416 2.4-.765 5.366-.78 2.966-.017 5.37.307 5.372.722.003.415-2.398.767-5.364.783Zm5.865-3.534c-.401-.423-1.84-1.537-5.892-1.514-4.058.022-5.479 1.15-5.875 1.578l-.003-.404s1.151-1.751 5.875-1.776c4.72-.025 5.893 1.713 5.893 1.713l.002.403Zm1.661 2.848-.204 2.965c.632-.993 1.16-.624 1.16-.624l-.013-2.346c-.679.267-.943.005-.943.005Z"
+                              fill="#121212"
+                            />
+                          </svg>
+                        </i>
+                        <span>Class X</span>
+                      </a>
+                    </li>
+                    <!-- end second level first -->
+                    <li>
+                      <a class="nav-level-2">
+                        <i class="icon-cap">
+                          <svg
+                            width="20"
+                            height="14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="m18.17 9.072-.011-1.914L20 6.128 9.973.84 0 6.234l3.998 2.295.008 1.365.001.108.037-.017a.296.296 0 0 0-.069.175c.003.67 2.712 1.202 6.054 1.183 3.341-.017 6.045-.579 6.043-1.248 0-.06-.031-.116-.072-.175l.036.017v-.109l-.007-1.37 1.733-1.078.01 1.695a.527.527 0 0 0-.322.489.52.52 0 0 0 .526.518.522.522 0 0 0 .52-.524.53.53 0 0 0-.326-.486Zm-8.143 1.81c-2.966.016-5.371-.31-5.374-.725-.002-.416 2.4-.765 5.366-.78 2.966-.017 5.37.307 5.372.722.003.415-2.398.767-5.364.783Zm5.865-3.534c-.401-.423-1.84-1.537-5.892-1.514-4.058.022-5.479 1.15-5.875 1.578l-.003-.404s1.151-1.751 5.875-1.776c4.72-.025 5.893 1.713 5.893 1.713l.002.403Zm1.661 2.848-.204 2.965c.632-.993 1.16-.624 1.16-.624l-.013-2.346c-.679.267-.943.005-.943.005Z"
+                              fill="#121212"
+                            />
+                          </svg>
+                        </i>
+                        <span>Class VI</span>
+                      </a>
+                    </li>
+                    <!-- end second level second -->
+                  </ul>
+                  <!-- end second level nav -->
+                </li>
+                <!-- end first -->
+                <li class="hover-2">
+                  <div class="nav-level-1">
+                    <p>ICSE</p>
+                    <span>Find study material for ICSE here</span>
+                  </div>
+                  <ul class="level-box level-2">
+                    <li>
+                      <a class="nav-level-2">
+                        <i class="icon-cap">
+                          <svg
+                            width="20"
+                            height="14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="m18.17 9.072-.011-1.914L20 6.128 9.973.84 0 6.234l3.998 2.295.008 1.365.001.108.037-.017a.296.296 0 0 0-.069.175c.003.67 2.712 1.202 6.054 1.183 3.341-.017 6.045-.579 6.043-1.248 0-.06-.031-.116-.072-.175l.036.017v-.109l-.007-1.37 1.733-1.078.01 1.695a.527.527 0 0 0-.322.489.52.52 0 0 0 .526.518.522.522 0 0 0 .52-.524.53.53 0 0 0-.326-.486Zm-8.143 1.81c-2.966.016-5.371-.31-5.374-.725-.002-.416 2.4-.765 5.366-.78 2.966-.017 5.37.307 5.372.722.003.415-2.398.767-5.364.783Zm5.865-3.534c-.401-.423-1.84-1.537-5.892-1.514-4.058.022-5.479 1.15-5.875 1.578l-.003-.404s1.151-1.751 5.875-1.776c4.72-.025 5.893 1.713 5.893 1.713l.002.403Zm1.661 2.848-.204 2.965c.632-.993 1.16-.624 1.16-.624l-.013-2.346c-.679.267-.943.005-.943.005Z"
+                              fill="#121212"
+                            />
+                          </svg>
+                        </i>
+                        <span>Class VI</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- end second level nav -->
+                </li>
+                <!-- end second -->
+              </ul>
+            </li>
+            <!-- end li 2 -->
+            <li>
+              <button class="btn btn-link mx-5">Login</button>
+            </li>
+            <li>
+              <button class="btn btn-primary">Register</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="nav-mobile">
+      <div class="container-nav">
+        <a href="/" class="logo">
+          <img src="Icons/loader.svg" loading="lazy" alt="logo" />
+          <span class="logo-text">Alphalyte</span>
+        </a>
+        <div class="mobile-right">
+          <button
+            class="btn-small"
+            aria-label="search"
+            x-on:click="mobileSearch = !mobileSearch"
+          >
+            <svg
+              width="20"
+              height="20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M9.396 2.262a7.134 7.134 0 1 1 0 14.268 7.134 7.134 0 0 1 0-14.268ZM16.582 15.406a1.176 1.176 0 1 1 0 2.352 1.176 1.176 0 0 1 0-2.352Z"
+                stroke="gray"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button
+            class="btn-small btn-small--10"
+            aria-label="menu"
+            x-on:click="mobileNav = true"
+          >
+            <svg
+              width="20"
+              height="20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.6 11.225c1.175 0 2.117.95 2.117 2.134v2.84A2.123 2.123 0 0 1 6.6 18.334H3.783A2.129 2.129 0 0 1 1.667 16.2v-2.841c0-1.184.95-2.134 2.116-2.134H6.6Zm9.617 0c1.166 0 2.116.95 2.116 2.134v2.84c0 1.176-.95 2.134-2.116 2.134H13.4a2.123 2.123 0 0 1-2.117-2.133v-2.841c0-1.184.942-2.134 2.117-2.134h2.817ZM6.6 1.667c1.175 0 2.117.958 2.117 2.134v2.84A2.118 2.118 0 0 1 6.6 8.775H3.783A2.123 2.123 0 0 1 1.667 6.64v-2.84c0-1.176.95-2.135 2.116-2.135H6.6Zm9.617 0c1.166 0 2.116.958 2.116 2.134v2.84c0 1.184-.95 2.134-2.116 2.134H13.4a2.118 2.118 0 0 1-2.117-2.134v-2.84c0-1.176.942-2.135 2.117-2.135h2.817Z"
+                fill="#2851E7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-search" x-bind:class="mobileSearch ? '' : 'hide'" x-cloak>
+    <form class="form-search" x-data="{ mobFocus: false }">
+      <label x-bind:class="mobFocus ? 'focused' : ''">
+        <i class="icon icon-search"></i>
+        <input
+          type="text"
+          title="search"
+          x-on:focus="mobFocus = true"
+          x-on:blur="mobFocus = false"
+          placeholder="Search Courses, Classes, etc..."
+        />
+      </label>
+    </form>
+    <button
+      class="btn-close"
+      aria-label="close search"
+      x-on:click="mobileSearch = !mobileSearch"
+    >
+      <svg
+        width="20"
+        height="20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.617 1.666c2.825 0 4.716 1.983 4.716 4.933v6.81c0 2.941-1.891 4.924-4.716 4.924H6.39c-2.825 0-4.724-1.983-4.724-4.924v-6.81c0-2.95 1.9-4.933 4.724-4.933h7.226Zm-1.109 5.81a.733.733 0 0 0-1.033 0L10 8.957 8.517 7.475a.733.733 0 0 0-1.034 0 .733.733 0 0 0 0 1.033l1.484 1.484-1.484 1.475A.733.733 0 0 0 8 12.717a.726.726 0 0 0 .517-.218L10 11.025l1.483 1.474c.142.151.325.218.508.218a.726.726 0 0 0 .517-.218.723.723 0 0 0 0-1.024l-1.483-1.483 1.483-1.484a.733.733 0 0 0 0-1.033Z"
+          fill="gray"
+        />
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-panel" x-bind:class="mobileNav ? '' : 'hide'" x-cloak>
+    <header class="container-nav">
+      <a href="/" class="logo logo-white">
+        <img src="Icons/logo-white.svg" loading="lazy" alt="logo" />
+        <span class="logo-text">Alphalyte</span>
+      </a>
+      <div class="mobile-right">
+        <button
+          class="btn-close"
+          aria-label="close menu"
+          x-on:click="mobileNav = !mobileNav"
+        >
+          <svg
+            width="20"
+            height="20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.617 1.666c2.825 0 4.716 1.983 4.716 4.933v6.81c0 2.941-1.891 4.924-4.716 4.924H6.39c-2.825 0-4.724-1.983-4.724-4.924v-6.81c0-2.95 1.9-4.933 4.724-4.933h7.226Zm-1.109 5.81a.733.733 0 0 0-1.033 0L10 8.957 8.517 7.475a.733.733 0 0 0-1.034 0 .733.733 0 0 0 0 1.033l1.484 1.484-1.484 1.475A.733.733 0 0 0 8 12.717a.726.726 0 0 0 .517-.218L10 11.025l1.483 1.474c.142.151.325.218.508.218a.726.726 0 0 0 .517-.218.723.723 0 0 0 0-1.024l-1.483-1.483 1.483-1.484a.733.733 0 0 0 0-1.033Z"
+              fill="#fff"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <div class="px-15 mt-15">
+      <button class="btn-primary-full">Register</button>
+      <button class="btn-link-full mt-30">Login</button>
+    </div>
+    <nav
+      aria-label="side navigation"
+      class="nav-side"
+      x-data="{selected: null}"
+    >
+      <ul>
+        <li class="expand-1" x-data="{selectedLevel: null}">
+          <span
+            class="expand-nav-level"
+            x-on:click="selected !== 1 ? selected = 1 : selected = null"
+          >
+            Study Material
+            <i
+              class="mobile-icon-down"
+              x-bind:class="selected === 1 ? 'up' : ''"
+            >
+              <svg
+                width="16"
+                height="16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.246 4.913c-.039.038-.204.18-.34.312-.855.777-2.255 2.803-2.683 3.864-.068.161-.214.568-.223.786 0 .208.048.407.145.597.136.236.35.426.603.53.175.066.7.17.71.17.573.104 1.506.162 2.537.162.982 0 1.876-.058 2.459-.143.01-.01.661-.113.885-.227A1.19 1.19 0 0 0 12 9.912v-.037c-.01-.284-.263-.88-.273-.88C11.3 7.99 9.968 6.01 9.083 5.214c0 0-.227-.223-.369-.32a1.189 1.189 0 0 0-.71-.228 1.25 1.25 0 0 0-.758.246Z"
+                  fill="#fff"
+                />
+              </svg>
+            </i>
+          </span>
+          <ul
+            class="expand-box"
+            x-bind:class="selected === 1 ? 'expanded' : ''"
+          >
+            <li class="expand-2">
+              <div
+                class="expand-nav-level-1"
+                x-on:click="selectedLevel !== 1 ? selectedLevel = 1 : selectedLevel = null"
+                x-bind:class="selectedLevel === 1 ? 'expanded' : ''"
+              >
+                <p>CBSE</p>
+                <span>Find study material for CBSE here</span>
+                <i
+                  class="mobile-icon-down"
+                  x-bind:class="selectedLevel === 1 ? 'up' : ''"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.246 4.913c-.039.038-.204.18-.34.312-.855.777-2.255 2.803-2.683 3.864-.068.161-.214.568-.223.786 0 .208.048.407.145.597.136.236.35.426.603.53.175.066.7.17.71.17.573.104 1.506.162 2.537.162.982 0 1.876-.058 2.459-.143.01-.01.661-.113.885-.227A1.19 1.19 0 0 0 12 9.912v-.037c-.01-.284-.263-.88-.273-.88C11.3 7.99 9.968 6.01 9.083 5.214c0 0-.227-.223-.369-.32a1.189 1.189 0 0 0-.71-.228 1.25 1.25 0 0 0-.758.246Z"
+                      fill="#fff"
+                    /></svg></i>
+              </div>
+              <ul
+                class="expand-box level-2"
+                x-bind:class="selectedLevel === 1 ? 'expanded' : ''"
+              >
+                <li>
+                  <a class="expand-nav-level-2">
+                    <i class="icon-cap">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 20 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m18.17 9.072-.011-1.914L20 6.128 9.973.84 0 6.234l3.998 2.295.008 1.365.001.108.037-.017a.296.296 0 0 0-.069.175c.003.67 2.712 1.202 6.054 1.183 3.341-.017 6.045-.579 6.043-1.248 0-.06-.031-.116-.072-.175l.036.017v-.109l-.007-1.37 1.733-1.078.01 1.695a.527.527 0 0 0-.322.489.52.52 0 0 0 .526.518.522.522 0 0 0 .52-.524.53.53 0 0 0-.326-.486Zm-8.143 1.81c-2.966.016-5.371-.31-5.374-.725-.002-.416 2.4-.765 5.366-.78 2.966-.017 5.37.307 5.372.722.003.415-2.398.767-5.364.783Zm5.865-3.534c-.401-.423-1.84-1.537-5.892-1.514-4.058.022-5.479 1.15-5.875 1.578l-.003-.404s1.151-1.751 5.875-1.776c4.72-.025 5.893 1.713 5.893 1.713l.002.403Zm1.661 2.848-.204 2.965c.632-.993 1.16-.624 1.16-.624l-.013-2.346c-.679.267-.943.005-.943.005Z"
+                          fill="#2851E7"
+                        />
+                      </svg>
+                    </i>
+                    <span>Class VI</span>
+                  </a>
+                </li>
+                <!-- end second level first -->
+                <li>
+                  <a class="expand-nav-level-2">
+                    <i class="icon-cap">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 20 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m18.17 9.072-.011-1.914L20 6.128 9.973.84 0 6.234l3.998 2.295.008 1.365.001.108.037-.017a.296.296 0 0 0-.069.175c.003.67 2.712 1.202 6.054 1.183 3.341-.017 6.045-.579 6.043-1.248 0-.06-.031-.116-.072-.175l.036.017v-.109l-.007-1.37 1.733-1.078.01 1.695a.527.527 0 0 0-.322.489.52.52 0 0 0 .526.518.522.522 0 0 0 .52-.524.53.53 0 0 0-.326-.486Zm-8.143 1.81c-2.966.016-5.371-.31-5.374-.725-.002-.416 2.4-.765 5.366-.78 2.966-.017 5.37.307 5.372.722.003.415-2.398.767-5.364.783Zm5.865-3.534c-.401-.423-1.84-1.537-5.892-1.514-4.058.022-5.479 1.15-5.875 1.578l-.003-.404s1.151-1.751 5.875-1.776c4.72-.025 5.893 1.713 5.893 1.713l.002.403Zm1.661 2.848-.204 2.965c.632-.993 1.16-.624 1.16-.624l-.013-2.346c-.679.267-.943.005-.943.005Z"
+                          fill="#2851E7"
+                        />
+                      </svg>
+                    </i>
+                    <span>Class VI</span>
+                  </a>
+                </li>
+                <!-- end second level second -->
+              </ul>
+              <!-- end second level nav -->
+            </li>
+            <!-- end first -->
+            <li class="expand-2">
+              <div
+                class="expand-nav-level-1"
+                x-on:click="selectedLevel !== 2 ? selectedLevel = 2 : selectedLevel = null"
+                x-bind:class="selectedLevel === 2 ? 'expanded' : ''"
+              >
+                <p>ICSE</p>
+                <span>Find study material for ICSE here</span>
+                <i
+                  class="mobile-icon-down"
+                  x-bind:class="selectedLevel === 2 ? 'up' : ''"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.246 4.913c-.039.038-.204.18-.34.312-.855.777-2.255 2.803-2.683 3.864-.068.161-.214.568-.223.786 0 .208.048.407.145.597.136.236.35.426.603.53.175.066.7.17.71.17.573.104 1.506.162 2.537.162.982 0 1.876-.058 2.459-.143.01-.01.661-.113.885-.227A1.19 1.19 0 0 0 12 9.912v-.037c-.01-.284-.263-.88-.273-.88C11.3 7.99 9.968 6.01 9.083 5.214c0 0-.227-.223-.369-.32a1.189 1.189 0 0 0-.71-.228 1.25 1.25 0 0 0-.758.246Z"
+                      fill="#fff"
+                    /></svg></i>
+              </div>
+              <ul
+                class="expand-box level-2"
+                x-on:click="selectedLevel !== 2 ? selectedLevel = 2 : selectedLevel = null"
+                x-bind:class="selectedLevel === 2 ? 'expanded' : ''"
+              >
+                <li>
+                  <a class="expand-nav-level-2">
+                    <i class="icon-cap">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 20 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m18.17 9.072-.011-1.914L20 6.128 9.973.84 0 6.234l3.998 2.295.008 1.365.001.108.037-.017a.296.296 0 0 0-.069.175c.003.67 2.712 1.202 6.054 1.183 3.341-.017 6.045-.579 6.043-1.248 0-.06-.031-.116-.072-.175l.036.017v-.109l-.007-1.37 1.733-1.078.01 1.695a.527.527 0 0 0-.322.489.52.52 0 0 0 .526.518.522.522 0 0 0 .52-.524.53.53 0 0 0-.326-.486Zm-8.143 1.81c-2.966.016-5.371-.31-5.374-.725-.002-.416 2.4-.765 5.366-.78 2.966-.017 5.37.307 5.372.722.003.415-2.398.767-5.364.783Zm5.865-3.534c-.401-.423-1.84-1.537-5.892-1.514-4.058.022-5.479 1.15-5.875 1.578l-.003-.404s1.151-1.751 5.875-1.776c4.72-.025 5.893 1.713 5.893 1.713l.002.403Zm1.661 2.848-.204 2.965c.632-.993 1.16-.624 1.16-.624l-.013-2.346c-.679.267-.943.005-.943.005Z"
+                          fill="#2851E7"
+                        />
+                      </svg>
+                    </i>
+                    <span>Class VI</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- end second level nav -->
+            </li>
+            <!-- end second -->
+          </ul>
+        </li>
+        <li class="expand-1" x-data="{selectedLevel: null}">
+          <span
+            class="expand-nav-level"
+            x-on:click="selected !== 2 ? selected = 2 : selected = null"
+            >Courses
+            <i
+              class="mobile-icon-down"
+              x-bind:class="selected === 2 ? 'up' : ''"
+            >
+              <svg
+                width="16"
+                height="16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.246 4.913c-.039.038-.204.18-.34.312-.855.777-2.255 2.803-2.683 3.864-.068.161-.214.568-.223.786 0 .208.048.407.145.597.136.236.35.426.603.53.175.066.7.17.71.17.573.104 1.506.162 2.537.162.982 0 1.876-.058 2.459-.143.01-.01.661-.113.885-.227A1.19 1.19 0 0 0 12 9.912v-.037c-.01-.284-.263-.88-.273-.88C11.3 7.99 9.968 6.01 9.083 5.214c0 0-.227-.223-.369-.32a1.189 1.189 0 0 0-.71-.228 1.25 1.25 0 0 0-.758.246Z"
+                  fill="#fff"
+                /></svg></i
+          ></span>
+          <ul
+            class="expand-box"
+            x-bind:class="selected === 2 ? 'expanded' : ''"
+          >
+            <li class="expand-2">
+              <div class="expand-nav-level-1"
+              x-on:click="selectedLevel !== 1 ? selectedLevel = 1 : selectedLevel = null"
+              x-bind:class="selectedLevel === 1 ? 'expanded' : ''">
+                <p>CBSE</p>
+                <span>Find study material for CBSE here</span>
+                <i
+                  class="mobile-icon-down"
+                  x-bind:class="selectedLevel === 1 ? 'up' : ''"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.246 4.913c-.039.038-.204.18-.34.312-.855.777-2.255 2.803-2.683 3.864-.068.161-.214.568-.223.786 0 .208.048.407.145.597.136.236.35.426.603.53.175.066.7.17.71.17.573.104 1.506.162 2.537.162.982 0 1.876-.058 2.459-.143.01-.01.661-.113.885-.227A1.19 1.19 0 0 0 12 9.912v-.037c-.01-.284-.263-.88-.273-.88C11.3 7.99 9.968 6.01 9.083 5.214c0 0-.227-.223-.369-.32a1.189 1.189 0 0 0-.71-.228 1.25 1.25 0 0 0-.758.246Z"
+                      fill="#fff"
+                    /></svg></i>
+              </div>
+              <ul  class="expand-box level-2"
+              x-bind:class="selectedLevel === 1 ? 'expanded' : ''">
+                <li>
+                  <a class="expand-nav-level-2">
+                    <i class="icon-cap">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 20 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m18.17 9.072-.011-1.914L20 6.128 9.973.84 0 6.234l3.998 2.295.008 1.365.001.108.037-.017a.296.296 0 0 0-.069.175c.003.67 2.712 1.202 6.054 1.183 3.341-.017 6.045-.579 6.043-1.248 0-.06-.031-.116-.072-.175l.036.017v-.109l-.007-1.37 1.733-1.078.01 1.695a.527.527 0 0 0-.322.489.52.52 0 0 0 .526.518.522.522 0 0 0 .52-.524.53.53 0 0 0-.326-.486Zm-8.143 1.81c-2.966.016-5.371-.31-5.374-.725-.002-.416 2.4-.765 5.366-.78 2.966-.017 5.37.307 5.372.722.003.415-2.398.767-5.364.783Zm5.865-3.534c-.401-.423-1.84-1.537-5.892-1.514-4.058.022-5.479 1.15-5.875 1.578l-.003-.404s1.151-1.751 5.875-1.776c4.72-.025 5.893 1.713 5.893 1.713l.002.403Zm1.661 2.848-.204 2.965c.632-.993 1.16-.624 1.16-.624l-.013-2.346c-.679.267-.943.005-.943.005Z"
+                          fill="#2851E7"
+                        />
+                      </svg>
+                    </i>
+                    <span>Class VI</span>
+                  </a>
+                </li>
+                <!-- end second level first -->
+                <li>
+                  <a class="expand-nav-level-2">
+                    <i class="icon-cap">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 20 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m18.17 9.072-.011-1.914L20 6.128 9.973.84 0 6.234l3.998 2.295.008 1.365.001.108.037-.017a.296.296 0 0 0-.069.175c.003.67 2.712 1.202 6.054 1.183 3.341-.017 6.045-.579 6.043-1.248 0-.06-.031-.116-.072-.175l.036.017v-.109l-.007-1.37 1.733-1.078.01 1.695a.527.527 0 0 0-.322.489.52.52 0 0 0 .526.518.522.522 0 0 0 .52-.524.53.53 0 0 0-.326-.486Zm-8.143 1.81c-2.966.016-5.371-.31-5.374-.725-.002-.416 2.4-.765 5.366-.78 2.966-.017 5.37.307 5.372.722.003.415-2.398.767-5.364.783Zm5.865-3.534c-.401-.423-1.84-1.537-5.892-1.514-4.058.022-5.479 1.15-5.875 1.578l-.003-.404s1.151-1.751 5.875-1.776c4.72-.025 5.893 1.713 5.893 1.713l.002.403Zm1.661 2.848-.204 2.965c.632-.993 1.16-.624 1.16-.624l-.013-2.346c-.679.267-.943.005-.943.005Z"
+                          fill="#2851E7"
+                        />
+                      </svg>
+                    </i>
+                    <span>Class VI</span>
+                  </a>
+                </li>
+                <!-- end second level second -->
+              </ul>
+              <!-- end second level nav -->
+            </li>
+            <!-- end first -->
+            <li class="expand-2">
+              <div class="expand-nav-level-1"
+              x-on:click="selectedLevel !== 2 ? selectedLevel = 2 : selectedLevel = null"
+              x-bind:class="selectedLevel === 2 ? 'expanded' : ''">
+                <p>ICSE</p>
+                <span>Find study material for ICSE here</span>
+                <i
+                  class="mobile-icon-down"
+                  x-bind:class="selectedLevel === 2 ? 'up' : ''"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.246 4.913c-.039.038-.204.18-.34.312-.855.777-2.255 2.803-2.683 3.864-.068.161-.214.568-.223.786 0 .208.048.407.145.597.136.236.35.426.603.53.175.066.7.17.71.17.573.104 1.506.162 2.537.162.982 0 1.876-.058 2.459-.143.01-.01.661-.113.885-.227A1.19 1.19 0 0 0 12 9.912v-.037c-.01-.284-.263-.88-.273-.88C11.3 7.99 9.968 6.01 9.083 5.214c0 0-.227-.223-.369-.32a1.189 1.189 0 0 0-.71-.228 1.25 1.25 0 0 0-.758.246Z"
+                      fill="#fff"
+                    /></svg></i>
+              </div>
+              <ul  class="expand-box level-2"
+              x-bind:class="selectedLevel === 2 ? 'expanded' : ''">
+                <li>
+                  <a class="expand-nav-level-2">
+                    <i class="icon-cap">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 20 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m18.17 9.072-.011-1.914L20 6.128 9.973.84 0 6.234l3.998 2.295.008 1.365.001.108.037-.017a.296.296 0 0 0-.069.175c.003.67 2.712 1.202 6.054 1.183 3.341-.017 6.045-.579 6.043-1.248 0-.06-.031-.116-.072-.175l.036.017v-.109l-.007-1.37 1.733-1.078.01 1.695a.527.527 0 0 0-.322.489.52.52 0 0 0 .526.518.522.522 0 0 0 .52-.524.53.53 0 0 0-.326-.486Zm-8.143 1.81c-2.966.016-5.371-.31-5.374-.725-.002-.416 2.4-.765 5.366-.78 2.966-.017 5.37.307 5.372.722.003.415-2.398.767-5.364.783Zm5.865-3.534c-.401-.423-1.84-1.537-5.892-1.514-4.058.022-5.479 1.15-5.875 1.578l-.003-.404s1.151-1.751 5.875-1.776c4.72-.025 5.893 1.713 5.893 1.713l.002.403Zm1.661 2.848-.204 2.965c.632-.993 1.16-.624 1.16-.624l-.013-2.346c-.679.267-.943.005-.943.005Z"
+                          fill="#2851E7"
+                        />
+                      </svg>
+                    </i>
+                    <span>Class VI</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- end second level nav -->
+            </li>
+            <!-- end second -->
+          </ul>
+        </li>
+        <!-- end li 2 -->
+      </ul>
+    </nav>
+  </div>
+  </body>
+</html>

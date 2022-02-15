@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body { margin: 0; 
+font-size: 1vw;
+}
+
+.mainDiv
+{
+    height: 100vh;
+    display: flex;
+}
+
+.leftPane
+{
+    width: 40vw;
+    height: 46vw;
+}
+
+.rightPane
+{
+    width: 60vw;
+    height:30.58vw;
+    background-color: blue;
+    display: flex;
+padding-top: 15.9vw;}
+
+.formContainer
+{
+    width: 46vw;
+    max-width: 23.4vw;
+    margin: 4.55vw auto 0;
+}
+.logo
+{
+    display: flex;
+    height: 2.08vw;
+    width: fit-content;
+    align-items: center;
+    justify-items: center;
+}
+
+#logoText
+{
+margin-left: 0.45vw;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 1.56vw;
+line-height: 2.08vw;
+}
+.logo>img{
+    width:1.56vw;
+     height:1.56vw ;
+}
+.backButton>a>img{
+    width:1.56vw;
+    height:1.56vw ;
+}
+.backButton
+{
+    margin-top: 1.7vw;
+    cursor: pointer;
+    height: 1.62vw;
+    width: fit-content;
+}
+
+.OTPtext
+{
+    top: 11.71vw;}
+
+#OTPtext1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.56vw;
+    line-height: 5.25vw;
+    color: #121212;
+}
+
+#OTPtext2
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.13vw;
+    line-height: 1.69vw;
+    color: #808080;
+}
+
+.OTPform
+{
+    margin-top: 5.85vw;
+}
+
+.inputOTP
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 16.27vw;
+}
+
+#inputOTP1, #inputOTP2,#inputOTP3, #inputOTP4
+{
+width: 2.92vw;
+height:2.92vw;
+background: #F5F8FE;
+border: 0.06vw solid rgba(128, 128, 128, 0.25);
+box-sizing: border-box;
+border-radius:0.52vw;
+text-align: center;
+color: blue;
+font-weight: bold;
+}
+
+.resendOTP
+{
+width: 8.46vw;
+height: 1.04vw;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 0.78vw;
+line-height: 1.04vw;
+color: #2851E7;
+opacity: 0.4;
+padding-top: 0.5vw;
+}
+
+.rightPane>img{
+    position: fixed;
+    width: 37.82vw;
+    height: 30.46vw;
+    margin-left: 5.5vw;
+}

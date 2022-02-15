@@ -1,0 +1,780 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.maincourseHeading{
+  display: block;
+  margin-left: 60px;
+  margin-top: 72px;
+  width: 300px;
+  height: 86px;
+}
+.courses1 {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 32px;
+  color: #808080;
+}
+.coursesText1 {
+  margin-left: 10px;
+  width: auto;
+  height: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #808080;
+}
+.coursesText2{
+  margin-top: 12px;
+  width: auto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  color: #2851E7;
+}
+.line1{
+  margin-top: 40px;
+  margin-left: 60px;
+  margin-bottom: 3.25rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #808080;
+}
+.chapterList>div:nth-child(odd),.paperDesign>div:nth-child(odd){
+  background: #eef2fcb6;
+}
+.wholetable{
+  width: 100%;
+  border-collapse: collapse;
+}
+.wholerow1{
+  background-color: #eef2fcb6;;
+  width: fit-content;
+}
+.unitheading1,.unitheading2, .unitheading3,.unittotal1,.unittotal2{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #2851E7;
+}
+.unitheading1{
+  height: 3.125rem;
+  width: 15%;
+  text-align: center;
+  max-width: 400px;
+
+}
+.unitheading2,.unittotal1{
+  height: 50px;
+  width: 70%;
+  text-align: left;
+  max-width: 400px;
+} 
+.unitheading3,.unittotal2{
+  height: 50px;
+  width: 15%;
+  text-align: center;
+  max-width: 400px;
+}
+.unitnumber{
+  height: 3.125rem;
+  width: 15%;
+  text-align: center;
+  max-width: 400px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #121212;
+}
+.unitname{
+  height: 50px;
+  width: 70%;
+  text-align: left;
+  max-width: 400px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #121212;
+}
+
+.unitmarks{
+  height: 50px;
+  width: 15%;
+  text-align: center;
+  max-width: 400px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #121212;
+}
+.booksdiv{
+  height: 50px ;
+  width: 100px ;
+  margin-top: 32px;
+}
+
+.studyResources{
+  margin-top: 30px;
+  display: block;
+  width: auto ;
+  height: fit-content;
+  background: #F5F8FE;
+
+}
+.subjectText1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  padding-top: 40px;
+}
+.subjectText2 {
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #808080;
+  text-align: center;
+}
+.subjectList1{
+  
+  flex-wrap: wrap;
+  margin-top: 52px;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subjectList1 a{
+  text-decoration: none;
+}
+
+.sub{
+  width: 270px;
+  height: 160px;
+ margin-left: 40px;
+  text-align: center;
+  background: #FFFDFD;
+  border-radius: 8px;
+margin-bottom: 40px;
+
+}
+.subjectName{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #121212;
+}
+.chapters{
+  display: block;
+  margin-top: 80px;
+  width: auto;
+  height: fit-content;
+}
+.chapterText1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 0px;
+}
+.chapterText2 {
+  margin-top: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #808080;
+  text-align: center;
+}
+.chapterList{
+  width:auto;
+  margin-top: 52px;
+}
+.chapter1{
+  width: auto ;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+.chapter1 a{
+  text-decoration: none;
+}
+.chapter1Text1{
+  max-width: 470px;
+  height: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #121212;
+  padding-left: 60px;
+}
+.chapter1Text2{
+  max-width: 470px;
+  height: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #121212;
+  padding-left: 10px;
+}
+.chapter1Text2:hover {
+  color: #2851E7;
+}
+
+.unitChapterData{
+  width: auto;
+  margin-top: 80px;
+  margin-left: 60px;
+  margin-right: 60px;
+  height:fit-content;
+}
+.unit1Data,.unit2Data,.unit3Data,.unit4Data,.unit5Data,.unit6Data,.unit7Data{
+  width: auto;
+  max-height: fit-content; 
+  margin-top: 40px;
+
+}
+.unit1Name{
+  display: block;
+}
+.unitNameText1 {
+  margin-top: 0;
+  width: auto;
+  height: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #808080;
+}
+.unitNameText2 {
+  width:auto;
+  height:fit-content;
+  margin-top: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  color: #2851E7;
+}
+.unit1Div2{
+  margin-top: 52px;
+  width: auto;
+  height: fit-content;
+}
+.rightLeftText{
+  width:auto;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+.unitLeftText{
+  width: auto;
+  height: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+
+}
+.unitRightText{
+  width: 178px;
+  height:fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+.unitText{
+  width: auto;
+  height: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: justify;
+  color: #808080;
+}
+.quePaperDesign{
+  display: block;
+  margin-top: 80px;
+  width: auto;
+  height: fit-content;
+
+}
+.quePaperText{
+  width: auto;
+  height: fit-content;
+  margin-top: 0px;
+  text-align: center;
+}
+.queText1{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: auto;
+  height: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #808080;
+
+}
+.queText2{
+  margin-top: 12px;
+  margin-bottom: 0px;
+  width: auto;
+  height: fit-content;   
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  color: #2851E7;
+}
+.queText3{
+  margin-top: 12px;
+  margin-bottom: 0px;
+  width: auto;
+  height: fit-content;
+  left: 597px;
+  top: 7874px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #808080;
+}
+
+.chapter1Textflex{
+  display: flex;
+  padding: 12px 0 12px 0;
+  align-items: center;}
+
+
+.wholetable12{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 52px;
+}
+.wholerow112{
+  background-color: #eef2fcb6;
+  width: fit-content;
+}
+.unitheading112,.unitheading212,.unitheading312,.unitheading412,.unittotal112,.unittotal212,.unittotal312{
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #2851E7;
+}
+.unitheading112{
+  height: fit-content;
+  width: 15%;
+  text-align: center;
+
+}
+.unitheading212,.unittotal112{
+  height: fit-content;
+  width: 55%;
+  text-align: left;
+} 
+.unitheading312,.unittotal212{
+  height: fit-content;
+  width: 15%;
+  text-align: center;
+
+}
+.unitheading412,.unittotal312{
+  height: fit-content;
+  width: 15%;
+  text-align: center;
+}
+
+.unitnumber12{
+  height: fit-content;
+  width: 15%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #121212;
+}
+.unitname12{
+  height: fit-content;
+  width: 55%;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #121212;
+  padding: 20px 0 20px 0;
+}
+.unitmarks12{
+  height: fit-content;
+  width: 15%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #121212;
+}
+.unitpercentage12{
+  height: fit-content;
+  width: 15%;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #121212;
+  }
+@media (max-width:480px){
+  .maincourseHeading{
+  display: block;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 72px;
+  width: auto;
+  height: 86px;
+  }
+.backicon123{display: none;}
+.courses1 {
+  display: block;
+  text-align: center;
+  width: auto;
+}
+
+.coursesText1 {
+  margin-left: 10px;
+  width: auto;
+  height: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #808080;
+}
+.coursesText2{
+  margin-top: 8px;
+  width: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #2851E7;
+}
+.line1{
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 3.25rem;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  padding: 0 24px 0 24px;
+}
+.unitheading1,.unitheading2, .unitheading3,.unittotal1,.unittotal2{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+.unitheading1{
+  height: 40px;
+
+}
+.unitheading2,.unittotal1{
+  height: 40px;
+} 
+.unitheading3,.unittotal2{
+  height: 40px;
+}
+.unitnumber{
+  height: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.unitname{
+  height: 40px;
+  width: 70%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+.unitmarks{
+  height: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+.studyResources{
+  margin-top: 24px;
+  display: block;
+  text-align: center;
+
+}
+.subjectText1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+.subjectText2 {
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  padding:  0 24px 0 24px;    
+  text-align: center;
+}
+.subjectList1{ margin-top: 32px;;
+  gap: 40px;
+}
+.subjectList1 a{
+  text-decoration: none;
+}
+.sub{
+  margin-left: 0px;
+  gap: 40px;
+  width: 170px;
+  height: 100px;
+  background: #FFFDFD;
+  border-radius: 8px;
+}
+.booksdiv{
+  width: 24.13px;
+  height: 29.27px;
+  margin-top: 20px;
+}
+.subjectName{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  padding-bottom: 12px;
+}
+.chapters{
+  margin-top: 40px;
+}
+.chapterText1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #121212; 
+}
+.chapterText2 {
+  margin-top: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+.chapterList{
+  margin-top: 32px;
+}
+.chapter1Text1{
+  height: fit-content;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 24px;
+
+}
+.chapter1Text2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 5px;
+}
+.unitChapterData{
+  margin-top: 40px;
+  margin-left:24px;
+  margin-right: 24px;
+}
+.unit1Data,.unit2Data,.unit3Data,.unit4Data,.unit5Data,.unit6Data,.unit7Data{
+  margin-top: 32px;
+
+}
+.unitNameText1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+}
+.unitNameText2 {
+  margin-top: 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+}
+.unit1Div2{
+  margin-top: 20px;
+}
+
+.unitLeftText{
+  font-style: normal;
+  font-weight: bold;
+  padding-bottom: 12px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.unitRightText{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+}
+.unitText{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: justify;
+}
+.quePaperDesign{
+ 
+  margin-top: 40px;
+}
+
+.queText1{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+
+}
+.queText2{
+  margin-top: 4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;}
+.queText3{
+  margin-top: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #808080;
+}
+.wholetable12{
+  margin-top: 20px;
+}
+.unitheading112,.unitheading212,.unitheading312,.unitheading412,.unittotal112,.unittotal212,.unittotal312{
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+.unitnumber12{
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+color: #121212;
+}
+.unitname12{
+  font-style: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #121212;
+  padding: 20px 0 20px 0;
+  
+}
+.unitmarks12{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+
+}
+.unitpercentage12{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #121212;
+  }
+}
